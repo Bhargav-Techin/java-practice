@@ -23,22 +23,22 @@ The final modified array is `[1, 0, 0, 2]`.
 Write a function that takes an array and the user-input number `N` as input and returns the modified array after performing the described process.
 
  */
-
+package dsaUsingJava;
 import java.util.*;
 
-public class addInArray{
+public class AddInArray{
 
     public static void addIntegerToArray(ArrayList<Integer> arr , int number){
         int carry = 0;
-        for(int i = arr.size(); i >0 ; i--){
-            int sum = arr.get(i-1) + number + carry;
+        for(int i = arr.size()-1; i >=0 ; i--){
+            int sum = arr.get(i) + number + carry;
             if(sum > 9){
-                arr.set(i-1, sum%10);
+                arr.set(i, sum%10);
                 number = 0;
                 carry = 1;
             }
             else{
-                arr.set(i-1, sum);
+                arr.set(i, sum);
                 break;
             }
         }
