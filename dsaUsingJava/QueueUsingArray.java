@@ -56,6 +56,7 @@ public class QueueUsingArray {
                         System.exit(1);
 
                     default:
+                    System.out.println("Invalid input.");
                         break;
                 }
             }

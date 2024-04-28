@@ -56,6 +56,7 @@ public class StackUsingArray {
                         System.exit(1);
 
                     default:
+                        System.out.println("Invalid input");
                         break;
                 }
             }
