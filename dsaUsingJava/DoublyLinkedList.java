@@ -53,7 +53,6 @@ public class DoublyLinkedList {
         dList.addNode(2);
         dList.addNode(3);
         dList.addNode(4);
-
         dList.display();
         dList.reverseDisplay();
     }
