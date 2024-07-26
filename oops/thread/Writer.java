@@ -35,10 +35,13 @@ public class Writer implements Runnable{
     public void run() {
         try{
             synchronized (fileLock) {
-                Thread.sleep(2000);
-                writerIn();
-                Thread.sleep(500);
-                writerOut();
+                for (int i = 0 ; i <= 5 ; i++) {
+                    Thread.sleep(2000);
+                    writerIn();
+                    Thread.sleep(500);
+                    writerOut();
+                }
+
             }
         }catch (InterruptedException e){
             e.printStackTrace();
